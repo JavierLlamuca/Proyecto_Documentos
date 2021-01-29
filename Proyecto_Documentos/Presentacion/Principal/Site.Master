@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Proyecto_Documentos.Presentacion.Inicio" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Presentacion/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form runat="server">
+
+
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                   Gestión de Documentos
+                </h1>
+            </div>
+            <div class="loginDisplay">
+            </div>
+            <div class="clear hideSkiplink">
+                <table style="width:100%">
+                        <tr>
+                            <td>
+                                <div style="float: left;">
+                                    <asp:Menu ID="Menu1" runat="server" CssClass="menu" Orientation="Horizontal" StaticDisplayLevels="2">
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="~/Presentacion/Principal/Default.aspx" Text="Principal" Value="Principal"></asp:MenuItem>
+                                        </Items>
+                                    </asp:Menu>
+                                </div>
+                            </td>
+                            <td>
+                              <div style="float: right;">
+                                    <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" OnClick="Button1_Click" BackColor="#465C71" BorderColor="#4E667D" BorderStyle="Solid" ForeColor="#F9F9F9" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+
+        <div class="clear">        
+
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

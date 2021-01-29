@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Presentacion/Principal/Default.aspx" title="Principal"  description="Página Principal" roles="*">
+    <siteMapNode url="" title="Administración"  description="" roles="Administrador">
+      <siteMapNode url="~/Presentacion/Principal/Administracion/Miembros.aspx" title="Miembros"  description="Gestionar Miembros del Consejo" />
+      <siteMapNode url="~/Presentacion/Principal/Administracion/Estudiantes.aspx" title="Estudiantes"  description="Gestionar Estudiantes" />
+      <siteMapNode url="~/Presentacion/Principal/Administracion/Configuraciones.aspx" title="Configuraciones"  description="Gestionar Configuraciones" />
+    </siteMapNode>
+    <siteMapNode url="" title="Documentos"  description="Documentos" roles="Administrador,Asistente">
+      <siteMapNode url="" title="Vinculación"  description="" roles="Administrador,Asistente">
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Vinculacion.aspx" title="Carta Compromiso"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Convenio.aspx" title="Convenio"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Practicas.aspx" title="Finalizacion de Practicas"  description="" />
+
+      </siteMapNode>
+      <siteMapNode url="" title="Titulación"  description="" roles="Administrador,Asistente">
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ExamenComplexivo.aspx" title="Examen Complexivo"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ProyectoInvestigacion.aspx" title="Proyecto de Investigación"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ArticuloAcademico.aspx" title="Articulo Académico"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Prorrogas"  description="" roles="Administrador,Asistente">
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ProrrogaGratuita.aspx" title="Prórroga Gratuita"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ProrrogaPagada.aspx" title="Prórroga Pagada"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="" title="Otros"  description="" roles="Administrador,Asistente">
+        <siteMapNode url="~/Presentacion/Principal/Documentos/TerceraMatricula.aspx" title="Tercera Matricula"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ActualizacionConocimientos.aspx" title="Actualización de Conocimientos"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/AprobacionReingreso.aspx" title="Aprobacion Reingreso"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/ReconocimientoCultura.aspx" title="Reconocimiento C.Fisica"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Homologacion.aspx" title="Homologación de Asignaturas"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/AsignacionCalificadores.aspx" title="Asignar Calificadores"  description="" />
+
+      </siteMapNode>
+      <siteMapNode url="" title="Actas"  description="" roles="Administrador,Asistente">
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Consejos.aspx" title="Consejo"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/Presentacion/Principal/Documentos/Correos.aspx" title="Correos"  description="" roles="Administrador,Asistente">
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
