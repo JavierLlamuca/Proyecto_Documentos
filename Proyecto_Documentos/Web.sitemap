@@ -34,6 +34,7 @@
       </siteMapNode>
       <siteMapNode url="" title="Actas"  description="" roles="Administrador,Asistente">
         <siteMapNode url="~/Presentacion/Principal/Documentos/Consejos.aspx" title="Consejo"  description="" />
+        <siteMapNode url="~/Presentacion/Principal/Documentos/Actas.aspx" title="Actas"  description="" />
       </siteMapNode>
       <siteMapNode url="~/Presentacion/Principal/Documentos/Correos.aspx" title="Correos"  description="" roles="Administrador,Asistente">
       </siteMapNode>

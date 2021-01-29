@@ -141,8 +141,8 @@ namespace Proyecto_Documentos.Presentacion.Principal.Documentos
         protected void btnActa_Click(object sender, EventArgs e)
         {
             guardar();
-            string codigo = TextBox1.Text;
-            Response.Redirect("Actas.aspx?consejo=" + codigo);
+           // string codigo = TextBox1.Text;
+           // Response.Redirect("Actas.aspx?consejo=" + codigo);
         }
     }
 }

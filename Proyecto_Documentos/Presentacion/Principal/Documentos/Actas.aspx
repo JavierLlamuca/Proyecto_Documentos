@@ -56,7 +56,10 @@
                    <asp:Label ID="Label2" runat="server" Text="Nº Consejo:"></asp:Label>
             </td>
             <td>
-                 <asp:TextBox ID="TextBox_Consejo" runat="server" Enabled="false"></asp:TextBox>
+                 <br />
+                 <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="id" DataValueField="id">
+                 </asp:DropDownList>
+                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Gestion_DocumentosConnectionString %>" SelectCommand="select top 1 id from Consejo order by id desc"></asp:SqlDataSource>
         
             </td>
         </tr>

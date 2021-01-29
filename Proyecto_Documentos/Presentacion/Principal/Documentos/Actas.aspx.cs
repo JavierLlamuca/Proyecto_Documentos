@@ -30,7 +30,7 @@ namespace Proyecto_Documentos.Presentacion.Principal.Documentos
                 GridView1.DataBind();
                 CargarDetalle();
                 if (Request.QueryString["consejo"] == null) return;
-                TextBox_Consejo.Text = Request.QueryString["consejo"].ToString();
+               // TextBox_Consejo.Text = DropDownList1.SelectedValue;
                 CargaTiposSesion();
             }
 
@@ -108,7 +108,7 @@ namespace Proyecto_Documentos.Presentacion.Principal.Documentos
                 Acta_Logica actalogica = new Acta_Logica();
                 Acta acta = new Acta();
                 acta.id = TextBox_Acta.Text;
-                acta.idConsejo = Convert.ToInt32(TextBox_Consejo.Text);
+                acta.idConsejo = Convert.ToInt32(DropDownList1.SelectedValue);
                 actalogica.Insertar(acta);
                 foreach (GridViewRow row in GridView1.Rows)
                 {
@@ -167,7 +167,7 @@ namespace Proyecto_Documentos.Presentacion.Principal.Documentos
         private void CrearWord()
         {
             List<Miembro> miembrosActa = new List<Miembro>();
-            miembrosActa = m.GetMiembrosActa(Convert.ToInt32(TextBox_Consejo.Text));
+            miembrosActa = m.GetMiembrosActa(Convert.ToInt32(DropDownList1.SelectedValue));
             string consejo = "";
             Configuracion c = new Configuracion();
             c = conf.TraerPresidente();

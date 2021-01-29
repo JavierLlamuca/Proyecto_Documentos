@@ -197,5 +197,11 @@ namespace Proyecto_Documentos.Presentacion.Principal.Documentos
                 return true;
             }
         }
+
+        protected void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+            txtFechaSesion.Text = txtFecha.Text;
+            txtFechaMemorando.Text = txtFecha.Text;
+        }
     }
 }

@@ -66,7 +66,7 @@
             <hr />
             <td colspan="2" align="center">
 
-                  <asp:Button ID="btnActa" runat="server" Text="Realizar Acta"  BackColor="#4E5766" BorderColor="#4E667D" BorderStyle="Solid" BorderWidth="1px" ForeColor="#DDE4EC" Height="30px" OnClick="btnActa_Click"/>
+                  <asp:Button ID="btnActa" runat="server" Text="Realizar Consejo"  BackColor="#4E5766" BorderColor="#4E667D" BorderStyle="Solid" BorderWidth="1px" ForeColor="#DDE4EC" Height="30px" OnClick="btnActa_Click"/>
             </td>
         </tr>
     </table>
